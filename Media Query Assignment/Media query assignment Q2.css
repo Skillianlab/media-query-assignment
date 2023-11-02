@@ -1,0 +1,23 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.image {
+  width: 5%;
+  margin-bottom: 20px;
+}
+
+/* Adjust layout to two images in a row for screens smaller than 800px */
+@media screen and (max-width: 800px) {
+  .image {
+    width: 48%;
+  }
+}
+/* Adjust layout to one image in a row for screens smaller than 500px */
+@media screen and (max-width: 500px) {
+  .image {
+    width: 80%;
+  }
+}

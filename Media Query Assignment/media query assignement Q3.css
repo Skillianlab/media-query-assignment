@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #333; /* Default background color for larger screens */
+  height: fit-content;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-list li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 786px) {
+  .navbar {
+    background-color: gray; /* Change background color for smaller screens */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-list li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
